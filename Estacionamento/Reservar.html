@@ -48,12 +48,18 @@
                         <input type="button"  name ="" value ="23">
                         <input type="button"  name ="" value ="24">
                 </p>
-                     <p >
-                        <input type ="text" placeholder="Data da reserva">
-                        <input type ="text" placeholder="Hora de entrada">
-                        <input type ="text" placeholder="Hora de saida">
-                       
-                        <input type ="button" onclick="window.location='indexC.html';" value="Confirmar">
+                     <p id="case">
+                        
+                        
+                        <input id="botao" type ="button" onclick="window.location='indexC.html';" value="Selecionar Diária">
+                        <input id="botao" type ="button" onclick="window.location='indexC.html';" value="Selecionar Mensal">
+                        <?php
+ echo date('h:i:s').'<br />'; //Resultado: 06:52:49
+
+ echo date('H:i:s'); //Resultado: 18:52:03
+?>
+                        <input type ="text" placeholder="Data Atual">
+                        
                     
                      </p>
 </form>
